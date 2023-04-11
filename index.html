@@ -1,13 +1,404 @@
 <!DOCTYPE html>
 <html>
+<title>
+The Dark Portal
+</title>
 <head>
-<title>This is my super cool website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #252525;
+  animation: llama .5s 1;
+}
+
+@keyframes llama{
+	from	{background: #414141;}
+	to	{background: #252525;}
+
+}
+
+.topnav a { 
+  float: left;
+  display: block;
+  color: #252525;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #252525;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: #414141;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  border-radius: 15px;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #414141;
+}
+
+@media screen and (max-width: 100px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+	color: #414141;
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 1px;
+	
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }  
+  
+  
+  
+}body {
+    background-color: #252525;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+    color:#ff0000;
+	animation: mymove .5s 1;
+}
+@keyframes mymove{
+	from	{background: #414141;}
+	to	{background: #252525;}
+
+}
+
+.toggle {
+	background-color: #252525;
+  border: none;
+  color:white;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.5;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow:0 4px #8c0000;
+  }
+
+  .toggle:hover {opacity: 1}
+  .toggle:hover {padding: 3px 4px}
+  .toggle:hover {color:#252525}
+  .toggle:hover {font-size: 18px}
+  .toggle:active {
+  box-shadow:0 2px #9932CC;
+  transform: translateY(4px)
+  }
+  
+
+
+
+yay {
+	background-color: #252525;
+	color: #ff0000;
+	animation: ha 3s infinite;
+}
+
+
+.blinking{
+    animation:blinkingText 0.3s infinite;
+}
+@keyframes blinkingText{
+    0%{     color: #ff0000;    }
+    50%{    color: #af0404; }
+    100%{   color: #ff0000;    }
+}
+
+	@keyframes ha {
+		0%		{color: #ff0000;}
+		50%		{color: #8c0000;}
+		100%	{color: #ff0000;}
+	
+	}
+.dennisButton {
+  background-color:#ff0000;
+  border: none;
+  color:white;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.5;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow:0 4px #af0404;
+  animation-name: test;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation: testy 10s infinite;
+  }
+  @keyframes test {
+  	0%	 {background-color: #252525; opacity: 1;}
+	100%  {background-color: #ff0000; opacity: .5}
+  }
+  @keyframes testy {
+  	0%		{background-color:#ff0000; box-shadow:0 4px #af0404;}
+	50%		{background-color:#8c0000; box-shadow: 0 4px #414141;}
+	100%	{background-color:#ff0000; box-shadow:0 4px #af0404;}
+  
+  
+  }
+  .dennisButton:hover {opacity: 1}
+  .dennisButton:hover {padding: 3px 4px}
+  .dennisButton:hover {color:#252525}
+  .dennisButton:hover {font-size: 18px}
+  .dennisButton:active {
+  box-shadow:0 2px #9932CC;
+  transform: translateY(4px)
+  }
+  
+  
+  .button {
+  background-color:#ff0000;
+  border: none;
+  color:white;
+  text-align: center;
+  font-size: 17px;
+  margin: 4px 2px;
+  opacity: 0.5;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 2px;
+  box-shadow:0 4px #af0404;
+  animation-name: test2;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  font-weight: bold;
+  }
+  @keyframes test2 {
+  	0%		{background-color:#ff0000; box-shadow:0 4px #af0404;}
+	50%		{background-color:#8c0000; box-shadow:0 4px #414141;}
+	100%    {background-color:#ff0000; box-shadow:0 4px #af0404;}
+  
+  
+  }
+  .button:hover {opacity: 1}
+  .button:hover {padding: 3px 4px}
+  .button:hover {color:#252525}
+  .button:hover {font-size: 19px}
+  .button:active {
+  box-shadow:0 1px #9932CC;
+  transform: translateY(4px)
+  }
+  .buttonaot {
+  background-color:#ff0000;
+  border: none;
+  color:white;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.5;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow:0 4px #af0404;
+  }
+  .buttonaot:hover {opacity: 1}
+  .buttonaot:hover {padding: 3px 4px}
+  .buttonaot:hover {color:red}
+  .buttonaot:hover {font-size: 19px}
+  .buttonaot:active {
+  box-shadow:0 1px #9932CC;
+  transform: translateY(4px)
+  }
+</style>
 </head>
 <body>
+<h1>
+The Dark Portal
+</h1> 
+<div class="topnav">
+    <form action="https://www.google.com/search" target="_blank">
+      <input id="search" type="text" placeholder="Google Search" name="q">
+      <button type="submit" value="search"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+<br>
+<br>
+<h3>
+Tools
+</h3>
+<button class="button" onclick='window.open("https://www.onlinecharttool.com/graph")'><b>Graph Creator</b></button>
+<br/>
+<h3>
+Class Gaming
+</h3>
+Compitition
+<button class="button" onclick='window.open("https://kahoot.it/")'>Kahoot</button>
+<button class="button" onclick='window.open("https://quizlet.live")'>Quizlet Live</button>
+<button class="button" onclick='window.open("https://quizizz.com/join/")'>Quizizz</button>
+<br/>
+Solo:
+<button class="button" onclick='window.open("https://quizlet.com/latest")'>Quizlet</button>
+<h3>
+Gaming
+</h3>
+<button class="button" onclick='window.open("http://poki.com/?gclid=CjsKDwjw6qnJBRDpoonDwLSeZhIkAIpTR8IsjHbf9aNIE_tzOn-lbE-ZQWwQFA9Pg_SqkebEzFHrGgKITfD_BwE")'><b>Web Games</b></button>
+:
+<button class="dennisButton" onclick='window.open("http://www.bgames.com/action-games/mirrors-edge-2d/")'>Mirror's Edge</button>
+<button class="dennisButton" onclick='window.open("http://www.gunblood.com/")'>GunBlood</button>
+<button class="dennisButton" onclick='window.open("http://www.sifthead.net/sift-renegade-3-game.php")'>Sift Renegade 3</button>
+<button class="dennisButton" onclick='window.open("https://www.google.com/search?q=snake")'>Snake</button>
+<button class="dennisButton" onclick='window.open("https://www.learn4good.com/games/action/fightingwithweapons.htm")'>Chaos Faction 2</button>
+<br>
+<button class="button" onclick='window.open("http://www.coolmath-games.com/")'><b>Coolmath</b></button>
+:
+<button class="dennisButton" onclick='window.open("https://www.coolmath-games.com/0-run-3")'>Run 3</button>
+<button class="dennisButton" onclick='window.open("https://www.coolmath-games.com/0-there-is-no-game")'>There is no game</button>
+<button class="dennisButton" onclick='window.open("https://www.coolmath-games.com/0-tail-of-the-dragon")'>Tail of the Dragon</button>
+<button class="dennisButton" onclick='window.open("https://www.coolmathgames.com/0-rookie-bowman")'>Rookie Bowman</button>
+<br>
+My Games:
+<button class="dennisButton" onclick='window.open("http://kegisi.itch.io/tacs")'>Totally Accurate Cube Simulator</button>
+<button class="dennisButton" onclick='window.open("http://kegisi.itch.io/rtxcubfield")'>RTX Cubefield</button>
+<h3>
+Video
+</h3>
+<button class="button" onclick='window.open("https://www.netflix.com/browse")'><b>Netflix</b></button>
+:
+<button class="dennisButton" onclick='window.open("https://www.netflix.com/watch/70298554?trackId=13752289&tctx=0%2C0%2C85c2bf3b6d3700855ef68ed670b3091900ecf32e%3A7707f617ec2b8191b54fa73a9fa0de01a6101137")'>Attack on Titan</button>
+<br> 
+<button class="button" onclick='window.open("https://www.youtube.com/")'><b>Youtube</b></button>
+:
+<br>
+<h3>
+Mail
+</h3>
+<button class="button" onclick='window.open("https://outlook.live.com/owa/")'><b>Inbox</b></button>
+<button class="button" onclick='window.open("https://mail.google.com/mail/u/0/#inbox")'><b>School Inbox</b></button>
+<h3>
+Learning
+</h3>
 
-<h1>Dennis website haha so cool</h1>
-<p>supercalafragilisticexpialodocious?</p>
+<button class="button" onclick='window.open("https://www.codecademy.com/learn")'><b>CodeCademy</b></button> 
+:
+<button class="dennisButton" onclick='window.open("https://www.codecademy.com/courses/learn-html-css/lessons/css-structure-syntax/exercises/element-selectors?action=lesson_resume")'>Learn html and CSS: part 1</button>
+<br>
+<button class="button" onclick='window.open("https://codecombat.com")'><b>CodeCombat</b></button>
+:
+<button class="dennisButton" onclick='window.open("https://codecombat.com/play/dungeon")'>Kithgard Dungeon</button>
+<button class="dennisButton" onclick='window.open("https://codecombat.com/play/forest")'>Backwoods Forest</button>
+<br>
+<button class="button" onclick='window.open("https://www.codesters.com/")'><b>Codesters</b></button>
+<br>
+<button class="button" onclick='window.open("https://www.duolingo.com")'><b>Duolingo</b></button>
+<br>
+<button class="button" onclick='window.open("https://www.tynker.com/dashboard/student/#/dashboard")'><b>Tynker</b></button>
+<br>
 
-<button>this button does absolutely nothing</button>
+<button class="button" onclick='window.open("https://www.typing.com/")'><b>Typing</b></button>
+<br>
+<button class="button" onclick='window.open("https://www.w3schools.com/default.asp")'><b>W3Schools</b></button>
+:
+<button class="dennisButton" onclick='window.open("https://www.w3schools.com/html/default.asp")'>html</button>
+<button class="dennisButton" onclick='window.open("https://www.w3schools.com/css/default.asp")'>CSS</button>
+<button class="dennisButton" onclick='window.open("https://www.w3schools.com/js/default.asp")'>javaScript</button>
+<br>
+<button class="button" onclick='window.open("https://www.wikipedia.org/")'><b>Wikipedia</b></button>
+<h3>
+School
+</h3>
+<button class="button" onclick='window.open("https://launchpad.classlink.com/home#myapps")'><b>LaunchPad</b></button>
+:
+<button class="dennisButton" onclick='window.open("chrome://restart")'>Three Oaks Middle</button>
+<button class="dennisButton" onclick='window.open("chrome://restart")'>Focus</button>
+<button class="dennisButton" onclick='window.open("chrome://restart")'>Castle</button>
+<button class="dennisButton" onclick='window.open("https://classroom.google.com/")'>Google Classroom</button>
+<button class="dennisButton" onclick='window.open("https://leeschools.ucertify.com/")'>UCertify</button>
+<br/>
+<button class="dennisButton" onclick='window.open("https://www.icivics.org/")'><b>iCivics</b></button>
+:
+<button class="dennisButton" onclick='window.open("https://www.icivics.org/games")'>Games</button> 
+<br/>
+<button class="button" onclick='window.open("http://civics360.org/")'><b>Civics 360</b></button>
+<br/>
+<button class="button" onclick='window.open("https://www.commonlit.org/en/user/student/my-assignments")'><b>Commonlit</b></button>
+<br/>
+<button class="button" onclick='window.open("https://www.usatestprep.com/states/states.php")'><b>USA Test Prep</b></button>
+:
+<button class="dennisButton" onclick='window.open("https://ww.usatestprep.com/modules/arcade")'>Games</button>
+<br/>
+<button class="button" onclick='window.open("https://k12integrations.pearsoncmg.com/ca/studentDashboard.htm")'><b>Pearson Realize</b></button>
+<br/>
+<button class="button" onclick='window.open("https://www.readworks.org/")'><b>Readworks</b></button>
+<br/>
+<button class="button" onclick='window.open("https://web.algebranation.com/")'><b>Algebra Nation</b></button>
+<br/>
+<h3>
+Teacher Websites
+</h3>
+<button class="button" onclick='window.open("https://app.oncoursesystems.com/school/webpage/457615/")'><b>Mrs. Williams</b></button><br/>
+<button class="button" onclick='window.open("https://app.oncoursesystems.com/school/webpage/457606/1485196")'><b>Mrs. MacLeod</b></button><br/>
+<button class="button" onclick='window.open("https://app.oncoursesystems.com/school/webpage/457586/")'><b>Mr. Laux</b></button><br/>
+<button class="button" onclick='window.open("https://app.oncoursesystems.com/school/webpage/457613")'><b>Mr. Summers</b></button><br/>
+<button class="button" onclick='window.open("https://app.oncoursesystems.com/school/webpage/10935926")'><b>Mrs. Douglas</b></button><br/>
+<button class="button" onclick='window.open("https://app.oncoursesystems.com/school/webpage/11209377")'><b>Mrs. Keegan</b></button><br/>
+<button class="button" onclick='window.open("https://app.oncoursesystems.com/school/webpage/457575/")'><b>Mrs. Cicero</b></button><br/>
+<button class="button" onclick='window.open("https://app.oncoursesystems.com/school/webpage/13416035")'><b>Mrs. Harmon</b></button><br/>
+<h3>
+Other
+</h3>
+<button class="dennisButton" onclick='window.open("https://www.troopwebhost.org/Troop119FortMyers/")'>Troop 119</button>
+<button class="dennisButton" onclick='window.open("https://www.newgrounds.com")'>Newgrounds</button>
+<br>
+<br>
+<br>
+<span class="blinking">Created By <b>Dennis Kerry</b></span>
+<br>
+<br>
+<br>
+<iframe id='webgl_iframe' frameborder="0" allow="autoplay; fullscreen; vr" allowfullscreen="" allowvr="" mozallowfullscreen="true" src="https://play.unity3dusercontent.com/webgl/4eb1eda3-ad16-416c-a19b-2f39f13db55a?screenshot=false&embedType=embed" width="810" height="640" onmousewheel="" webkitallowfullscreen="true"></iframe>
+
 </body>
 </html>
